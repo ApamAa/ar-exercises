@@ -7,11 +7,8 @@ require_relative './exercise_4'
 puts "Exercise 5"
 puts "----------"
 
-@sum = Store.sum(:annual_revenue)
-@aver = Store.average(:annual_revenue)
+puts @sum = Store.sum(:annual_revenue)
+puts @average = Store.average(:annual_revenue)
 
-@mill = Store.where("annual_revenue > 1000000").count
+puts @million = Store.where("annual_revenue > 1000000").count
 
-puts @sum
-puts @aver
-puts @mill
